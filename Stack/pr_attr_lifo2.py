@@ -12,3 +12,5 @@ def dailyTemperatures(temp):
             answer[prev_day] =day - prev_day
         stack.append((day, temp))
     return answer
+
+dailyTemperatures([73,74,75,71,69,72,76,73])
