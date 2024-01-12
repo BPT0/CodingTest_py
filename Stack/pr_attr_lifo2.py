@@ -8,9 +8,9 @@ def dailyTemperatures(temp):
     stack = []
     for day, temp in enumerate(temp):
         while stack and stack[-1][1] < temp:
-            prev_day, _ = stack.pop()
-            answer[prev_day] =day - prev_day
-        stack.append((day, temp))
+            prev_day, _ = stack.pop() # _는 temp를 의미하나요?
+            answer[prev_day] = day - prev_day # 이부분 이해가 되지 않아 설명이 막힘 다시 수강하기
+        stack.append((day, temp)) 
     return answer
 
 dailyTemperatures([73,74,75,71,69,72,76,73])
