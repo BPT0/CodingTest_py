@@ -21,4 +21,8 @@ def isValid(s):
         elif not stack or stack.pop() != p:
             return False
     return not stack
-            
+
+# 괄호 유효성이 stack으로 정해놓지 않고
+# 왜 stack으로 구현해야 될지 생각하며 구현
+# 이 문제만 보면 바로 코드가 구현될 정도로 5번 이상
+# 그후 응용 확장
